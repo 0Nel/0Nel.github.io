@@ -1,55 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <title>My 2nd Brain</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  
-  <!--body style="background-color:powderblue;"-->
+
   <body>
+
+    <!-- menu bar -->
+    <ul class="menu-ul">
+      <li class="menu-li dropdown"href="#home">
+        <a href="javascript:void(0)" class="dropbtn"><b>my2ndBrain</b></a>
+        <div class="dropdown-content">
+          <a href="#">Learn HTML</a>
+          <a href="#">Archive Useful Knowledge</a>
+          <a href="#">Lifelong learning && backup 101</a>
+        </div>
+      </li>
+      <li class="menu-li dropdown"href="#programming">
+        <a href="javascript:void(0)" class="dropbtn"><b>Programming</b></a>
+        <div class="dropdown-content">
+          <a href="#">C++</a>
+          <a href="#">ROS</a>
+          <a href="#">Docker</a>
+          <a href="#">Bash</a>
+          <a href="#">Telegram Bots</a>
+        </div>
+      </li>
+      <li class="menu-li dropdown"href="#unix">
+        <a href="javascript:void(0)" class="dropbtn"><b>Unix</b></a>
+        <div class="dropdown-content">
+          <a href="#">cronjobs</a>
+          <a href="#">boot services</a>
+          <a href="#">Bash</a>
+          <a href="#">Alias Collection</a>
+          <a href="#">Network</a>
+        </div>
+      </li>
+      <li class="menu-li dropdown"href="#tinkering">
+        <a href="javascript:void(0)" class="dropbtn"><b>Tinkering</b></a>
+        <div class="dropdown-content">
+          <a href="#">Pi-Projects</a>
+          <a href="#">Electronics</a>
+        </div>
+      </li>
+      <li class="menu-li dropdown"href="#blender">
+        <a href="javascript:void(0)" class="dropbtn"><b>Blender</b></a>
+        <div class="dropdown-content">
+          <a href="#">Tutorial Link Collection</a>
+          <a href="#">Knowledge Pool</a>
+        </div>
+      <li class="menu-li dropdown dropbtn"href="#about"><b>whoami</b></li>
+    </ul>
     
-    <h1>My 2nd Brain</h1>
+    <!--div style="background-color:black; color:white; padding:20px">
+      <h2>My 2nd brain</h2>
+        <ul>
+          <li>Learning HTML</li>
+          <li>Archiving random knowledge</li>
+        </ul>
+    </div-->
+
+    <h1>Programming</h1>
     <hr>
-    <h3>Motivation</h3>
-      <pre>
-        - Learning HTML
-        - Archiving random knowledge
-      </pre>
-    <h2>Categories</h2>
-      <h3>Programming</h3>
-      <hr>
-        <h4>C++</h4>
-          <p>unique_ptr with specific deleter</p>
-        <h4><abbr title="Robot Operating System">ROS</abbr></h4>
-        <h4>Bash</h4>
-          <h5 style="font-size:14px;">Scripting</h5>
-            <p>$PRINT_INFO, _WARNING, _DEBUG, _ERROR with :||echo from docker_dev</p>
-          <h5 style="font-size:14px;">Commandline Kung-Fu</h5>
-            <p>for loops</p>
-            <p>$(!!)</p>
-            <p>!</p>
-            <p>parse live output and search for pattern</p>
-            <p>AltGr + . to insert last argument</p>
-        <h4>Docker</h4>
-        <h4>Helpers</h4>
-          <p>gitMe</p>
-          <p>gitmagic</p>
-          <p>thisEnv</p>
-          <p>bashrc</p>
-      <h3>Pi Projects</h3>
-      <hr>
-          <p>tagesschau wecker</p>
-        <h4>Telegram Bots</h4>
-          <p>printbot</p>
-          <p>dobby</p>
-      <h3>Blender</h3>
-      <hr>
-        <img src="figures/blender_logo.png"
-             alt="blender_logo"
-             width="100" />
-          <p>Tutorial Link collection</p>
-          <p>Knowledge Pool</p>
-      <h3>Music</h3>
-      <hr>
+      <h2>C++</h2>
+        <p>unique_ptr with specific deleter</p>
+      <h2>Bash</h2>
+        <h4 style="font-size:14px;">Scripting</h4>
+          <p>$PRINT_INFO, _WARNING, _DEBUG, _ERROR with :||echo from docker_dev</p>
+          <p>Link to script collection</p>
+        <h4 style="font-size:14px;">Commandline Kung-Fu</h4>
+          <ul>
+            <li>for loops</li>
+            <li>$(!!)</li>
+            <li>!</li>
+            <li>parse live output and search for pattern</li>
+            <li>Alt + . to insert last argument</li>
+          </ul>
+      <h2>Telegram Bots</h2>
+        <p>printbot</p>
+        <p>dobby</p>
+    <h1>Unix</h1>
+      <ul>
+        <li>aliasse && functions as alias</li>
+        <li>gitMe</li>
+        <li>gitmagic</li>
+        <li>thisEnv</li>
+        <li>bashrc</li>
+        <li>network debugging: wireshark, ip dump</li>
+        <li>IP hex <-> decimal converter</li>
+      </ul>
+    <hr>
+    <h1>Tinkering</h1>
+      <h2>Electronics</h2>
+        <p> TurnOn || TurnOff Snabber </p>
+        <p> Condensator packs </p>
+
+    <h1>TODOs</h1>
+      <ul>
+        <li>create new background image. Maybe exploding brain in blender?</li>
+        <li>side expansion of dropdown menus for more detailed selection</li>
+        <li>add sub pages</li>
+        <li>add favicon</li>
+        <li>init page view counter</li>
+        <li>use picture element instead of images to consider mobile devices</li>
+      </ul>
     
   </body>
 </html>
