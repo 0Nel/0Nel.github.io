@@ -1,3 +1,7 @@
+/* header encapsulation taken from:
+   https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
+*/
+
 const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
@@ -11,6 +15,7 @@ headerTemplate.innerHTML = `
       background-color: #333333;
     }
     .menu-li {
+      font-size: 135%;
       float: left;
     }
     .dropbtn {
@@ -45,9 +50,9 @@ headerTemplate.innerHTML = `
   <header>
     <ul class="menu-ul">
       <li class="menu-li dropdown"href="#home">
-        <a href="javascript:void(0)" class="dropbtn"><b>my2ndBrain</b></a>
+        <a href="/index.html" class="dropbtn"><b>my2ndBrain</b></a>
         <div class="dropdown-content">
-          <a href="#">Learn HTML</a>
+          <a href="pages/my2ndBrain/learn_html.html">Learn HTML</a>
           <a href="#">Archive Useful Knowledge</a>
           <a href="#">Lifelong learning && backup 101</a>
         </div>
@@ -55,11 +60,11 @@ headerTemplate.innerHTML = `
       <li class="menu-li dropdown"href="#programming">
         <a href="javascript:void(0)" class="dropbtn"><b>Programming</b></a>
         <div class="dropdown-content">
-          <a href="#">C++</a>
+          <a href="pages/programming/cpp.html">C++</a>
           <a href="#">ROS</a>
           <a href="#">Docker</a>
-          <a href="#">Bash</a>
-          <a href="#">Telegram Bots</a>
+          <a href="pages/programming/bash.html">Bash</a>
+          <a href="pages/programming/telegram_bots.html">Telegram Bots</a>
         </div>
       </li>
       <li class="menu-li dropdown"href="#unix">
@@ -67,16 +72,16 @@ headerTemplate.innerHTML = `
         <div class="dropdown-content">
           <a href="#">cronjobs</a>
           <a href="#">boot services</a>
-          <a href="#">Bash</a>
-          <a href="#">Alias Collection</a>
-          <a href="#">Network</a>
+          <a href="pages/programming/bash.html">Bash</a>
+          <a href="pages/unix/alias.html">Alias Collection</a>
+          <a href="pages/unix/network.html">Network</a>
         </div>
       </li>
       <li class="menu-li dropdown"href="#tinkering">
         <a href="javascript:void(0)" class="dropbtn"><b>Tinkering</b></a>
         <div class="dropdown-content">
-          <a href="#">Pi-Projects</a>
-          <a href="#">Electronics</a>
+          <a href="pages/tinkering/pi-projects.html">Pi-Projects</a>
+          <a href="pages/tinkering/electronics.html">Electronics</a>
         </div>
       </li>
       <li class="menu-li dropdown"href="#blender">
@@ -85,7 +90,14 @@ headerTemplate.innerHTML = `
           <a href="#">Tutorial Link Collection</a>
           <a href="#">Knowledge Pool</a>
         </div>
-      <li class="menu-li dropdown dropbtn"href="#about"><b>whoami</b></li>
+      <li class="menu-li dropdown"href="#whoami">
+        <a href="javascript:void(0)" class="dropbtn"><b>whoami</b></a>
+        <div class="dropdown-content">
+          <a href="https://github.com/0Nel" target="_blank">github</a>
+          <a href="https://www.researchgate.net/profile/Leon-Danter" target="_blank">researchgate</a>
+          <a href="https://robotik.dfki-bremen.de/de/ueber-uns/mitarbeiter/leda01.html" target="_blank">DFKI</a>
+          <a href="pages/whoami/publications.html" target="_blank">Paper</a>
+        </div>
     </ul>
   </header>
 `;
