@@ -3,64 +3,22 @@
 
   <head>
     <title>My 2nd Brain</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+
   </head>
 
   <body>
 
-    <!-- menu bar -->
-    <ul class="menu-ul">
-      <li class="menu-li dropdown"href="#home">
-        <a href="javascript:void(0)" class="dropbtn"><b>my2ndBrain</b></a>
-        <div class="dropdown-content">
-          <a href="#">Learn HTML</a>
-          <a href="#">Archive Useful Knowledge</a>
-          <a href="#">Lifelong learning && backup 101</a>
-        </div>
-      </li>
-      <li class="menu-li dropdown"href="#programming">
-        <a href="javascript:void(0)" class="dropbtn"><b>Programming</b></a>
-        <div class="dropdown-content">
-          <a href="#">C++</a>
-          <a href="#">ROS</a>
-          <a href="#">Docker</a>
-          <a href="#">Bash</a>
-          <a href="#">Telegram Bots</a>
-        </div>
-      </li>
-      <li class="menu-li dropdown"href="#unix">
-        <a href="javascript:void(0)" class="dropbtn"><b>Unix</b></a>
-        <div class="dropdown-content">
-          <a href="#">cronjobs</a>
-          <a href="#">boot services</a>
-          <a href="#">Bash</a>
-          <a href="#">Alias Collection</a>
-          <a href="#">Network</a>
-        </div>
-      </li>
-      <li class="menu-li dropdown"href="#tinkering">
-        <a href="javascript:void(0)" class="dropbtn"><b>Tinkering</b></a>
-        <div class="dropdown-content">
-          <a href="#">Pi-Projects</a>
-          <a href="#">Electronics</a>
-        </div>
-      </li>
-      <li class="menu-li dropdown"href="#blender">
-        <a href="javascript:void(0)" class="dropbtn"><b>Blender</b></a>
-        <div class="dropdown-content">
-          <a href="#">Tutorial Link Collection</a>
-          <a href="#">Knowledge Pool</a>
-        </div>
-      <li class="menu-li dropdown dropbtn"href="#about"><b>whoami</b></li>
-    </ul>
-    
-    <!--div style="background-color:black; color:white; padding:20px">
-      <h2>My 2nd brain</h2>
-        <ul>
-          <li>Learning HTML</li>
-          <li>Archiving random knowledge</li>
-        </ul>
-    </div-->
+    <!-- start navigation bar -->
+    <header-component></header-component>
+    <!-- end navigation bar -->
+
+    <main>
 
     <h1>Programming</h1>
     <hr>
@@ -97,8 +55,14 @@
         <p> TurnOn || TurnOff Snabber </p>
         <p> Condensator packs </p>
 
+    <h1>whoami</h1>
+        <p>link researchgate</p>
+        <p>link github</p>
+        <p>link dfki</p>
+
     <h1>TODOs</h1>
       <ul>
+        <li>limit width of drop down menus instead of spanning entire page</li>
         <li>create new background image. Maybe exploding brain in blender?</li>
         <li>side expansion of dropdown menus for more detailed selection</li>
         <li>add sub pages</li>
@@ -106,6 +70,7 @@
         <li>init page view counter</li>
         <li>use picture element instead of images to consider mobile devices</li>
       </ul>
-    
+
+    </main>
   </body>
 </html>
