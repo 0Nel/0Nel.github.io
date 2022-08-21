@@ -82,6 +82,7 @@ headerTemplate.innerHTML = `
         <div class="dropdown-content">
           <a href="pages/tinkering/pi-projects.html">Pi-Projects</a>
           <a href="pages/tinkering/electronics.html">Electronics</a>
+          <a href="pages/tinkering/wood-working.html">Wood working</a>
         </div>
       </li>
       <li class="menu-li dropdown"href="#blender">
