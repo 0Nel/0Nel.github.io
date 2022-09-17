@@ -66,6 +66,7 @@ headerTemplate.innerHTML = `
           <a href="#">Docker</a>
           <a href="pages/programming/bash.html">Bash</a>
           <a href="pages/programming/telegram_bots.html">Telegram Bots</a>
+          <a href="pages/programming/ruby.html">ruby</a>
         </div>
       </li>
       <li class="menu-li dropdown"href="#unix">
