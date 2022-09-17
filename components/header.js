@@ -54,7 +54,8 @@ headerTemplate.innerHTML = `
         <div class="dropdown-content">
           <a href="pages/my2ndBrain/learn_html.html">Learn HTML</a>
           <a href="#">Archive Useful Knowledge</a>
-          <a href="#">Lifelong learning && backup 101</a>
+          <a href="#">Blog</a>
+          <a href="#">Lifelong learning && backup my brain</a>
         </div>
       </li>
       <li class="menu-li dropdown"href="#programming">
