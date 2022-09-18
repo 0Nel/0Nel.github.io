@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>ffmpeg</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../styles.css" rel="stylesheet" type="text/css" />
+    <script src="../../components/header.js" type="text/javascript" defer></script>
+
+  </head>
+
+  <body>
+
+    <!-- start navigation bar -->
+    <header-component></header-component>
+    <!-- end navigation bar -->
+
+    <h1>trim video</h1>
+      <h2>trim from 00:00:00 to 00:00:47</h2>
+        <ul>
+          <li>ffmpeg -ss 00:00:00 -i mesh_operator_script.mp4 -t 00:00:47 -c copy cropped.mp4</li>
+        </ul>
+      <h2>slice last 10 seconds of video</h2>
+        <ul>
+           <li>ffmpeg -sseof -10 -i mesh_operator_script.mp4 -c copy cropped.mp4</li>
+        </ul>
+  </body>
+</html>
