@@ -17,6 +17,15 @@
     <header-component></header-component>
     <!-- end navigation bar -->
 
+    <h1>make compressed GIF</h1>
+      <ul>
+        <li>ffmpeg -ss 00:00:00 -i input.mp4 -t 00:00:32 -vf "fps=5,scale=1280:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif
+</li>
+      </ul>
+    <h1>make compressed video (compression values of 24-30)</h1>
+      <ul>
+        <li>ffmpeg -i input.mp4 -vcodec libx265 -crf 30 compressed.mp4</li>
+      </ul>
     <h1>trim video</h1>
       <h2>trim from 00:00:00 to 00:00:47</h2>
         <ul>
