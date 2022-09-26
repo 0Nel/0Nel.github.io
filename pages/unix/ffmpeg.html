@@ -26,6 +26,17 @@
       <ul>
         <li>ffmpeg -i input.mp4 -vcodec libx265 -crf 30 compressed.mp4</li>
       </ul>
+    <h1>overlay video with text. Use ffplay at first to correctly position your text. On ubunut find fonts (*.ttf) at /usr/share/fonts</h1>
+      <ul>
+        ffplay -vf "drawtext=fontfile=/path/to/fonts/*.ttf:text='2x':fontcolor=white:fontsize=84:box=1:boxcolor=black@0.8:boxborderw=5:x=(w-text_w)/20:y=(h-text_h)/20" output.mp4
+        ffmpeg -i input.mp4 -vf "drawtext=fontfile=/path/to/fonts/*.ttf:text='2x':fontcolor=white:fontsize=84:box=1:boxcolor=black@0.8:boxborderw=5:x=(w-text_w)/20:y=(h-text_h)/20" input.mp4
+      </ul>
+
+    <h1>speed up/slow down video</h1>
+      <ul>
+        ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" output.mp4
+      </ul>
+
     <h1>trim video</h1>
       <h2>trim from 00:00:00 to 00:00:47</h2>
         <ul>
