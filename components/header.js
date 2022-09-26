@@ -77,7 +77,7 @@ headerTemplate.innerHTML = `
           <a href="pages/programming/bash.html">Bash</a>
           <a href="pages/unix/alias.html">Alias Collection</a>
           <a href="pages/unix/network.html">Network</a>
-          <a href="pages/unix/ffmpeg.html">Collection of useful ffmpeg commands</a>
+          <a href="pages/unix/ffmpeg.html">ffmpeg</a>
         </div>
       </li>
       <li class="menu-li dropdown"href="#tinkering">
