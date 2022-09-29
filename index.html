@@ -31,6 +31,15 @@
           <li>init page view counter</li>
           <li>add blog style entries to main page, when scrolling (make template for entries)</li>
           <li>unix section for udev rule stuff (lsusb, udevadm info, hcitool, dmesg) dmesg -H -e -c -w; hcitool scan; sudo hciconfig hci0 reset </li>
+          <li>hcitool dev                      # show local bluetooth <interface> devices (e.g. hci0)</li>
+          <li>hcitool scan                     # scan for devices to find MAC Address</li>
+          <li>bluetoothctl                     # enter bluetooth control cli</li>
+          <li>    remove <MAC:ADD>             # remove device from known devices</li>
+          <li>sudo hciconfig <interface> reset    # reset bluetooth interface</li>
+          <li>bluetoothctl                     # enter bluetooth control cli</li>
+          <li>    pair <MAC:ADD>                   # pair device</li>
+          <li>    connect <MAC:ADD>                # connect device</li>
+          <li>    trust <MAC::ADD>                 # trust device in order to avoid having to enable automatic connection</li>
         </ul>
 
     </main>
