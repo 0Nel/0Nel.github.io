@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>device management</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="../../styles.css" rel="stylesheet" type="text/css" />
+  <script src="../../components/header.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+
+  <!-- start navigation bar -->
+  <header-component></header-component>
+  <!-- end navigation bar -->
+
+  <section>
+    <h1>udev rules</h1>
+    <p>In the near future, I will add a step by step guide on how to quickly write udev rules</p>
+  </section>
+
+  <section>
+    <h1>bluetooth device handling</h1>
+    <p>Commands to interact with bluetooth devices</p>
+    <pre>
+      <code>
+        <comment># show local bluetooth devices</comment>
+        hcitool dev
+
+        <comment># scan for devices to find MAC Address</comment>
+        hcitool -i &lt;interface&gt; scan
+
+        <comment># # reset bluetooth interface</comment>
+        sudo hciconfig &lt;interface&gt; reset
+      </code>
+    </pre>
+
+    <p>Reset a bluetooth device using bluetooth control cli <b>bluetoothctl</b></p>
+    <pre>
+      <code>
+        <comment># enter bluetooth control cli</comment>
+        bluetoothctl
+      </code>
+        
+      <code>
+        remove &lt;MAC:ADD&gt;<br>
+        pair &lt;MAC:ADD&gt;<br>
+        connect &lt;MAC:ADD&gt;<br>
+        <comment># trust device to enable auto-connect</comment>
+        trust &lt;MAC:ADD&gt;
+      </code>
+    </pre>
+  </section>
+
+
+</body>
+
+</html>
