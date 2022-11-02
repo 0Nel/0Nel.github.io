@@ -76,6 +76,7 @@ headerTemplate.innerHTML = `
           <a href="#">boot services</a>
           <a href="pages/programming/bash.html">Bash</a>
           <a href="pages/unix/alias.html">Alias Collection</a>
+          <a href="pages/unix/device_management.html">device management</a>
           <a href="pages/unix/network.html">Network</a>
           <a href="pages/unix/ffmpeg.html">ffmpeg</a>
         </div>
