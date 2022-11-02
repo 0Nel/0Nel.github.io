@@ -52,7 +52,7 @@ headerTemplate.innerHTML = `
       <li class="menu-li dropdown"href="#home">
         <a href="/index.html" class="dropbtn"><b>my2ndBrain</b></a>
         <div class="dropdown-content">
-          <a href="pages/my2ndBrain/learn_html.html">Learn HTML</a>
+          <a href="/pages/my2ndBrain/learn_html.html">Learn HTML</a>
           <a href="#">Archive Useful Knowledge</a>
           <a href="#">Blog</a>
           <a href="#">Lifelong learning && backup my brain</a>
@@ -61,12 +61,12 @@ headerTemplate.innerHTML = `
       <li class="menu-li dropdown"href="#programming">
         <a href="javascript:void(0)" class="dropbtn"><b>Programming</b></a>
         <div class="dropdown-content">
-          <a href="pages/programming/cpp.html">C++</a>
+          <a href="/pages/programming/cpp.html">C++</a>
           <a href="#">ROS</a>
           <a href="#">Docker</a>
-          <a href="pages/programming/bash.html">Bash</a>
-          <a href="pages/programming/telegram_bots.html">Telegram Bots</a>
-          <a href="pages/programming/ruby.html">ruby</a>
+          <a href="/pages/programming/bash.html">Bash</a>
+          <a href="/pages/programming/telegram_bots.html">Telegram Bots</a>
+          <a href="/pages/programming/ruby.html">ruby</a>
         </div>
       </li>
       <li class="menu-li dropdown"href="#unix">
@@ -74,19 +74,19 @@ headerTemplate.innerHTML = `
         <div class="dropdown-content">
           <a href="#">cronjobs</a>
           <a href="#">boot services</a>
-          <a href="pages/programming/bash.html">Bash</a>
-          <a href="pages/unix/alias.html">Alias Collection</a>
-          <a href="pages/unix/device_management.html">device management</a>
-          <a href="pages/unix/network.html">Network</a>
-          <a href="pages/unix/ffmpeg.html">ffmpeg</a>
+          <a href="/pages/programming/bash.html">Bash</a>
+          <a href="/pages/unix/alias.html">Alias Collection</a>
+          <a href="/pages/unix/device_management.html">device management</a>
+          <a href="/pages/unix/network.html">Network</a>
+          <a href="/pages/unix/ffmpeg.html">ffmpeg</a>
         </div>
       </li>
       <li class="menu-li dropdown"href="#tinkering">
         <a href="javascript:void(0)" class="dropbtn"><b>Tinkering</b></a>
         <div class="dropdown-content">
-          <a href="pages/tinkering/pi-projects.html">Pi-Projects</a>
-          <a href="pages/tinkering/electronics.html">Electronics</a>
-          <a href="pages/tinkering/wood-working.html">Wood working</a>
+          <a href="/pages/tinkering/pi-projects.html">Pi-Projects</a>
+          <a href="/pages/tinkering/electronics.html">Electronics</a>
+          <a href="/pages/tinkering/wood-working.html">Wood working</a>
         </div>
       </li>
       <li class="menu-li dropdown"href="#blender">
@@ -101,7 +101,7 @@ headerTemplate.innerHTML = `
           <a href="https://github.com/0Nel" target="_blank">github</a>
           <a href="https://www.researchgate.net/profile/Leon-Danter" target="_blank">researchgate</a>
           <a href="https://robotik.dfki-bremen.de/de/ueber-uns/mitarbeiter/leda01.html" target="_blank">DFKI</a>
-          <a href="pages/whoami/publications.html" target="_blank">Paper</a>
+          <a href="/pages/whoami/publications.html" target="_blank">Paper</a>
         </div>
     </ul>
   </header>
