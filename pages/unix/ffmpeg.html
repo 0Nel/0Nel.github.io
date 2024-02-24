@@ -17,6 +17,20 @@
     <header-component></header-component>
     <!-- end navigation bar -->
 
+    <h1>video to image sequence</h1>
+      <ul>
+        <li>
+          ffmpeg -i input.mp4 -vf "scale=1920:1080" output.mp4
+        </li>
+      </ul>
+    
+    <h1>select nth image from video</h1>
+      <ul>
+        <li>
+          ffmpeg -i input.mp4 -vf "select='eq(n,0)'" -vframes 1 first_frame.png
+        </li>
+      </ul>
+    
     <h1>make compressed GIF</h1>
       <ul>
         <li>ffmpeg -ss 00:00:00 -i input.mp4 -t 00:00:32 -vf "fps=5,scale=1280:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif
