@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>image_manipulation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../styles.css" rel="stylesheet" type="text/css" />
+    <script src="../../components/header.js" type="text/javascript" defer></script>
+
+  </head>
+
+  <body>
+
+    <!-- start navigation bar -->
+    <header-component></header-component>
+    <!-- end navigation bar -->
+
+    <h1>swap colors on image sequence (masking)</h1>
+      <pre>
+        <code>
+for file in *.png; do
+    <comment># use -threshold 50% to get only black and white</comment>
+    convert "$file" -background white -alpha remove -negate -threshold 50% "${file%.png}_inverted.png"
+done
+        </code>
+      </pre>
+    </h1>
+  </body>
+</html>
