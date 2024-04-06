@@ -14,6 +14,19 @@ h1 {
 }
 
 code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Enable horizontal scrollbar if needed */
+}
+
+/*
+code {
   font-family: Consolas,"courier new";
   color: rgb(227, 209, 213);
   background-color: #f1f1f1;
@@ -28,6 +41,7 @@ code {
   flex-direction: column;
   align-items: flex-start;
 }
+*/
 
 comment {
   font-style: italic;
