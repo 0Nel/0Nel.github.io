@@ -74,10 +74,11 @@ headerTemplate.innerHTML = `
         <div class="dropdown-content">
           <a href="#">cronjobs</a>
           <a href="#">boot services</a>
-          <a href="/pages/programming/bash.html">Bash</a>
-          <a href="/pages/unix/alias.html">Alias Collection</a>
+          <a href="/pages/programming/bash.html">bash</a>
+          <a href="/pages/unix/alias.html">alias collection</a>
           <a href="/pages/unix/device_management.html">device management</a>
-          <a href="/pages/unix/network.html">Network</a>
+          <a href="/pages/unix/image_manipulation.html">image manipulation</a>
+          <a href="/pages/unix/network.html">network</a>
           <a href="/pages/unix/ffmpeg.html">ffmpeg</a>
         </div>
       </li>
